@@ -1,0 +1,51 @@
+{
+    "home": {
+        "comming-soon": "Bientôt disponible.."
+    },
+    "staff": {
+        "direction-part": "Direction",
+        "sous-direct-part": "Sous direction",
+        "ceo": "CEO",
+        "cto": "CTO",
+        "communication": "Responsable Communication",
+        "ia": "Responsable IA",
+        "procedural": "Responsable Procedural",
+        "moteur": "Responsable Moteur Graphique",
+        "design": "Responsable Design",
+        "juridique": "Responsable Juridique",
+        "developper": "Developpeur",
+        "contact": "Une idée ? Une question ?",
+        "contact-us": "Contactez nous !"
+    },
+    "contact": {
+        "name": "Nom",
+        "firstname": "Prénom",
+        "mail": "Adresse Email",
+        "reason": "Raison",
+        "partner": "Partenariat",
+        "presse": "Presse",
+        "autre": "Autre",
+        "message": "Message",
+        "close": "Fermer",
+        "send": "Envoyer",
+        "emptname": "Vous devez renseigner votre nom.",
+        "emptfname": "Vous devez renseigner votre prénom.",
+        "emptmail": "Vous devez renseigner votre adresse email.",
+        "emptreason": "Vous devez renseigner une raison.",
+        "emptmess": "Vous devez renseigner votre message.",
+        "wrmail": "Vous devez renseigner une adresse email correct.",
+        "sendmail": "Message depuis Leaflighted.com",
+        "success": "Message envoyé."
+    },
+    "footer": {
+        "rubrics": "Rubriques",
+        "home": "Accueil",
+        "game": "Le Jeu",
+        "contact": "Contact",
+        "info": "Informations sur le site",
+        "mentions": "Mentions Légales",
+        "data": "Données Personnelles",
+        "dark": "Passer en Mode Sombre",
+        "light": "Passer en Mode Clair"
+    }
+}
