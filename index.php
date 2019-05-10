@@ -4,7 +4,6 @@
         setLangCookie($_GET['lang']);
     if (isset($_GET['mode']))
         setModeCookie($_GET['mode']);
-    $lang = changeLanguage();
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -14,7 +14,7 @@ if (!empty($games)) {
 ?>
 <div class="games box">
     <div class="container">
-        <h1><?php echo $lang['games']['games']; ?></h1>
+        <h1><?php echo Lib::Sanitize($lang['games']['games']); ?></h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <?php
@@ -43,11 +43,11 @@ if (!empty($games)) {
             ?>
             <a class="carousel-control-prev" href="#prevNextImg" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"><?php echo $lang['games']['prev']; ?></span>
+                <span class="sr-only"><?php echo Lib::Sanitize($lang['games']['prev']); ?></span>
             </a>
             <a class="carousel-control-next" href="#prevNextImg" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only"><?php echo $lang['games']['next']; ?></span>
+                <span class="sr-only"><?php echo Lib::Sanitize($lang['games']['next']); ?></span>
             </a>
             <?php
             }

@@ -13,28 +13,28 @@ $lang = changeLanguage();
         <div class="row">
                 <hr class="clearfix w-100 d-md-none">
                 <div class="col">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><?php echo $lang['footer']['rubrics']; ?></h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><?php echo Lib::Sanitize($lang['footer']['rubrics']); ?></h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#" onclick="return false;" onmousedown="autoScrollTo('head');"><?php echo $lang['footer']['home']; ?></a>
+                            <a href="#" onclick="return false;" onmousedown="autoScrollTo('head');"><?php echo Lib::Sanitize($lang['footer']['home']); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php echo $lang['footer']['game']; ?></a>
+                            <a href="#"><?php echo Lib::Sanitize($lang['footer']['game']); ?></a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="modal" data-target=".contact-modal"><?php echo $lang['footer']['contact']; ?></a>
+                            <a href="#" data-toggle="modal" data-target=".contact-modal"><?php echo Lib::Sanitize($lang['footer']['contact']); ?></a>
                         </li>
                     </ul>
                 </div>
                 <hr class="clearfix w-100 d-md-none">
                 <div class="col">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><?php echo $lang['footer']['info']; ?></h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><?php echo Lib::Sanitize($lang['footer']['info']); ?></h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#"><?php echo $lang['footer']['mentions']; ?></a>
+                            <a href="#"><?php echo Lib::Sanitize($lang['footer']['mentions']); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php echo $lang['footer']['data']; ?></a>
+                            <a href="#"><?php echo Lib::Sanitize($lang['footer']['data']); ?></a>
                         </li>
                         <li>
                             <a href="index.php?mode=<?php
@@ -46,11 +46,11 @@ $lang = changeLanguage();
                                 echo "LIGHT";
                             ?>"><?php
                                 if (strcmp(getModeCookie(), 'DARK') == 0)
-                                    echo $lang['footer']['light'];
+                                    echo Lib::Sanitize($lang['footer']['light']);
                                 else if (strcmp(getModeCookie(), 'LIGHT') == 0)
-                                    echo $lang['footer']['dark'];
+                                    echo Lib::Sanitize($lang['footer']['dark']);
                                 else
-                                    echo $lang['footer']['light'];
+                                    echo Lib::Sanitize($lang['footer']['light']);
                             ?></a>
                         </li>
                     </ul>
