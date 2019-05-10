@@ -19,7 +19,7 @@ $lang = changeLanguage();
                             <a href="#" onclick="return false;" onmousedown="autoScrollTo('head');"><?php echo Lib::Sanitize($lang['footer']['home']); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php echo Lib::Sanitize($lang['footer']['game']); ?></a>
+                            <a href="#" onclick="return false;" onmousedown="autoScrollTo('games-bar');"><?php echo Lib::Sanitize($lang['footer']['game']); ?></a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target=".contact-modal"><?php echo Lib::Sanitize($lang['footer']['contact']); ?></a>

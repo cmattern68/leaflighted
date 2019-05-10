@@ -4,6 +4,7 @@
     },
     "games": {
         "games": "Nos jeux",
+        "onlygames": "Notre jeu",
         "prev": "Précédent",
         "next": "Suivant"
     },

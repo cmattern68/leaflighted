@@ -12,9 +12,9 @@ else
 
 if (!empty($games)) {
 ?>
-<div class="games box">
+<div id="games-bar" class="games box">
     <div class="container">
-        <h1><?php echo Lib::Sanitize($lang['games']['games']); ?></h1>
+        <h1><?php echo sizeof($games) <= 1 ? Lib::Sanitize($lang['games']['onlygames']) : Lib::Sanitize($lang['games']['onlygame']); ?></h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <?php
