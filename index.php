@@ -27,6 +27,7 @@
 <body>
     <!-- Page Content -->
     <?php include("pages/header.php"); ?>
+    <?php include("pages/games.php"); ?>
     <?php include("pages/staff.php"); ?>
     <?php include("pages/footer.php"); ?>
     <!-- Bootstrap core JavaScript -->

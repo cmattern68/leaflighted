@@ -85,7 +85,7 @@
 
 .header {
     height: 100vh;
-    background-image: url("../assets/background.jpg");
+    background-image: url("../assets/background.png");
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
@@ -132,7 +132,7 @@
 
 .contact-us {
     height: 100vh;
-    background-image: url("../assets/back.jpg");
+    background-image: url("../assets/back.png");
     background-attachment: fixed;
     background-size: cover;
     padding-top: 1px;
@@ -216,4 +216,24 @@ footer a:hover {
 .rs-color img:hover {
     animation: rs_filter 0.5s forwards;
     cursor: pointer;
+}
+
+.games {
+    height: 100vh;
+    background-image: url("../assets/games-back.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 1px;
+    color: white;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    height: 350px;
+    width: 100%;
+}
+.gamesslide {
+    margin-top: 25px;
+}
+
+.gamesslide img {
+    margin: 0px auto;
 }

@@ -2,6 +2,11 @@
     "home": {
         "comming-soon": "Bientôt disponible.."
     },
+    "games": {
+        "games": "Nos jeux",
+        "prev": "Précédent",
+        "next": "Suivant"
+    },
     "staff": {
         "direction-part": "Direction",
         "sous-direct-part": "Sous direction",

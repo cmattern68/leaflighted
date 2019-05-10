@@ -2,6 +2,11 @@
     "home": {
         "comming-soon": "Comming soon.."
     },
+    "games": {
+        "games": "Our games",
+        "prev": "Previous",
+        "next": "Next"
+    },
     "staff": {
         "direction-part": "Direction",
         "sous-direct-part": "Management Team",
