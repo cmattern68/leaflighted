@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  ven. 10 mai 2019 à 17:11
+-- Généré le :  Dim 12 mai 2019 à 20:53
 -- Version du serveur :  10.1.38-MariaDB
 -- Version de PHP :  7.3.4
 
@@ -40,7 +40,7 @@ CREATE TABLE `games` (
 --
 
 INSERT INTO `games` (`uuid`, `name`, `href`, `path`) VALUES
-('5cd588f27bb31', 'Rite', '#', 'assets/jaquette/default.jpg');
+('5cd588f27bb31', 'Rite', '#', 'assets/jaquette/rite.png');
 
 --
 -- Index pour les tables déchargées
