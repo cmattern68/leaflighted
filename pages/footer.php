@@ -1,14 +1,17 @@
 <?php
 $lang = changeLanguage();
+if (strcmp(getModeCookie(), 'LIGHT') == 0) {
+    $bl = 'footer-light';
+    $blk = 'foot-hr-dark';
+} else if (strcmp(getModeCookie(), 'DARK') == 0) {
+    $bl = 'footer-dark';
+    $blk = 'foot-hr-dark';
+} else {
+    $bl = 'footer-light';
+    $blk = 'foot-hr-dark';
+}
 ?>
-<footer class="page-footer font-small stylish-color-dark pt-4 <?php
-        if (strcmp(getModeCookie(), 'LIGHT') == 0)
-            echo 'footer-light';
-        else if (strcmp(getModeCookie(), 'DARK') == 0)
-            echo 'footer-dark';
-        else
-            echo 'footer-light';
-        ?>">
+<footer class="page-footer font-small stylish-color-dark pt-4 <?php echo $bl; ?>">
     <div class="container text-center text-md-left">
         <div class="row">
                 <hr class="clearfix w-100 d-md-none">
@@ -72,8 +75,8 @@ $lang = changeLanguage();
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="footer-copyright text-center py-3">&copy; 2018 Copyright:
-            <a href="#"> Leaflighted.com</a>
+        <hr class="<?php echo $blk;?>">
+        <div class="footer-copyright text-center">&copy; 2018 Copyright
+            <a href="leaflighted.com"> Leaflighted.com</a>
         </div>
 </footer>

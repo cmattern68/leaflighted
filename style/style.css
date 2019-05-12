@@ -9,7 +9,7 @@
 }
 
 .navbar-dev-dark {
-    background-color: rgba(45, 52, 54, 0.5) !important;
+    background-color: rgba(18, 18, 18, 0.5) !important;
 }
 
 .lang-light a {
@@ -99,7 +99,7 @@
 }
 
 .staff-dark {
-    background-color: #2d3436;
+    background-color: #121212;
     color: #ecf0f1;
     width: 100%;
 }
@@ -109,7 +109,8 @@
 }
 
 .card-staff-dark {
-    background-color: #bdc3c7;
+    background-color: #1E1D1D;
+    border: 1px solid #292828;
 }
 
 .staff-bg {
@@ -147,7 +148,7 @@
 }
 
 .modal-dark {
-    background-color: #2d3436 !important;
+    background-color: #121212 !important;
     color: #FFF !important;
     text-align: left !important;
 }
@@ -155,6 +156,28 @@
 .contact-btn {
     width: 90%;
     margin-left: 5%;
+}
+
+.contact-dark {
+    background-color: #1E1D1D !important;
+    border: 1px solid #292828;
+    color: white;
+}
+
+.contact-dark::placeholder {
+    color: white;
+}
+
+.close-dark {
+    color: #FFF !important;
+}
+
+.hr-dark {
+    border-bottom: 1px solid #1E1D1D;
+}
+
+.top-hr-dark {
+    border-top: 1px solid #1E1D1D;
 }
 
 .idea {
@@ -166,7 +189,7 @@
 }
 
 .footer-dark {
-    background-color: #2d3436 !important;
+    background-color: #121212 !important;
     color: #FFF !important;
 }
 
@@ -180,6 +203,10 @@ footer a {
 
 footer a:hover {
     color: #27ae60;
+}
+
+.foot-hr-dark {
+    background-color: #1E1D1D;
 }
 
 .rs img {
@@ -226,7 +253,7 @@ footer a:hover {
     padding-top: 1px;
     color: white;
     text-align: center;
-    font-family: 'Righteous', cursive;  
+    font-family: 'Righteous', cursive;
     height: 350px;
     width: 100%;
 }
