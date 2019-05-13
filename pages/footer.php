@@ -2,13 +2,13 @@
 $lang = changeLanguage();
 if (strcmp(getModeCookie(), 'LIGHT') == 0) {
     $bl = 'footer-light';
-    $blk = 'foot-hr-dark';
+    $blk = 'foot-hr-light';
 } else if (strcmp(getModeCookie(), 'DARK') == 0) {
     $bl = 'footer-dark';
     $blk = 'foot-hr-dark';
 } else {
     $bl = 'footer-light';
-    $blk = 'foot-hr-dark';
+    $blk = 'foot-hr-light';
 }
 ?>
 <footer class="page-footer font-small stylish-color-dark pt-4 <?php echo $bl; ?>">
