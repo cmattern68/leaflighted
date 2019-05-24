@@ -30,7 +30,7 @@ else
                 <div class="card mb-3 staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -45,7 +45,7 @@ else
                 <div class="card mb-3  staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -64,7 +64,7 @@ else
                 <div class="card mb-3 staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -80,7 +80,7 @@ else
                 <div class="card mb-3 staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -97,7 +97,7 @@ else
                 <div class="card mb-3  staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -113,7 +113,7 @@ else
                 <div class="card mb-3  staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -132,7 +132,7 @@ else
                 <div class="card mb-3  staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -148,7 +148,7 @@ else
                 <div class="card mb-3 staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -164,7 +164,7 @@ else
                 <div class="card mb-3 staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -181,7 +181,7 @@ else
                 <div class="card mb-3 staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -197,7 +197,7 @@ else
                 <div class="card mb-3  staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -213,7 +213,7 @@ else
                 <div class="card mb-3  staff-bg <?php echo $blk; ?>">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="assets/staff/chien.jpg" class="card-img" alt="...">
+                            <img src="assets/staff/default.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
