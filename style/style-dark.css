@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar-dev {
+    background-color: rgba(18, 18, 18, 0.5) !important;
+}
+
+.lang a {
+    display: inline-block;
+    color: white !important;
+}
+
+.log-img {
+    color: white;
+}
+
+.logo-brand {
+    margin-left: 1%;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.logo-img img {
+    width: 150px;
+    margin-top: 70px;
+}
+
+.logo-text {
+    font-family: 'Righteous', cursive;
+    font-size:45px;
+    color: white;
+    text-align: center;
+}
+
+.rite-log-txt {
+    font-family: 'Righteous', cursive;
+    font-size:20px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes filter {
+    0% {
+        filter: blur(0.5px) grayscale(0%);
+        -webkit-filter: blur(0.5px) grayscale(0%);
+    }
+
+    50% {
+        filter: blur(0.5px) grayscale(40%);
+        -webkit-filter: blur(0.5px) grayscale(40%);
+    }
+
+    100% {
+        filter: blur(1px) grayscale(80%);
+        -webkit-filter: blur(1px) grayscale(80%);
+    }
+
+    to {
+        filter: blur(1px) grayscale(80%);
+        -webkit-filter: blur(1px) grayscale(80%);
+    }
+}
+
+.filter:hover {
+    animation: filter 0.5s forwards;
+}
+
+.hover-show {
+    display: none;
+}
+
+.hover-show:hover {
+    display: block;
+}
+
+.header {
+    height: 100vh;
+    background-image: url("../assets/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.staff {
+    background-color: #121212;
+    color: #ecf0f1;
+    width: 100%;
+}
+
+.card-staff {
+    background-color: #1E1D1D;
+    border: 1px solid #292828;
+}
+
+.staff-bg {
+    margin-top: 10px;
+}
+
+.staff-name {
+    padding-top: 5px;
+}
+
+.block-staff-white {
+    border-bottom: 1px solid #34495e;
+}
+
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-us {
+    height: 100vh;
+    background-image: url("../assets/back.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 1px;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-css-content {
+    background-color: #121212 !important;
+    color: #FFF !important;
+    text-align: left !important;
+}
+
+.contact-btn {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contact {
+    background-color: #1E1D1D !important;
+    border: 1px solid #292828;
+    color: white;
+}
+
+.contact::placeholder {
+    color: white;
+}
+
+.close {
+    color: #FFF !important;
+}
+
+.hr {
+    border-bottom: 1px solid #1E1D1D;
+}
+
+.top-hr {
+    border-top: 1px solid #1E1D1D;
+}
+
+.idea {
+    color: white;
+}
+
+.footer {
+    background-color: #121212 !important;
+    color: #FFF !important;
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #FFF !important;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: #27ae60;
+}
+
+.foot-hr {
+    background-color: #1E1D1D;
+}
+
+.rs img {
+    margin-bottom: 3px !important;
+}
+
+@keyframes rs_filter {
+    0% {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+
+    50% {
+        filter: grayscale(20%);
+        -webkit-filter: grayscale(20%);
+    }
+
+    100% {
+        filter: grayscale(40%);
+        -webkit-filter: grayscale(40%);
+    }
+
+    to {
+        filter: grayscale(40%);
+        -webkit-filter: grayscale(40%);
+    }
+}
+
+.rs img:hover {
+    animation: rs_filter 0.5s forwards;
+    cursor: pointer;
+}
+
+.rs-color img:hover {
+    animation: rs_filter 0.5s forwards;
+    cursor: pointer;
+}
+
+.games {
+    height: 100vh;
+    background-image: url("../assets/games-back.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 1px;
+    color: white;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    height: 350px;
+    width: 100%;
+}
+.gamesslide {
+    margin-top: 25px;
+}
+
+.gamesslide img {
+    margin: 0px auto;
+}
+
+/*
+ Cookie Bar
+ */
+
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    color: #ecf0f1;
+    background: #27ae60;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline;
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+}

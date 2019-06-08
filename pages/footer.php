@@ -1,17 +1,15 @@
 <?php
-$lang = changeLanguage();
-if (strcmp(getModeCookie(), 'LIGHT') == 0) {
-    $bl = 'footer-light';
-    $blk = 'foot-hr-light';
-} else if (strcmp(getModeCookie(), 'DARK') == 0) {
-    $bl = 'footer-dark';
-    $blk = 'foot-hr-dark';
-} else {
-    $bl = 'footer-light';
-    $blk = 'foot-hr-light';
-}
+$mode = "LIGHT";
+if (strcmp(getModeCookie(), 'DARK') == 0)
+    $mode = "LIGHT";
+else if (strcmp(getModeCookie(), 'LIGHT') == 0)
+    $mode = "DARK";
+else
+    $mode = "LIGHT";
+include("privacy.php");
+include("legal.php");
 ?>
-<footer class="page-footer font-small stylish-color-dark pt-4 <?php echo $bl; ?>">
+<footer class="page-footer font-small stylish-color-dark pt-4 footer">
     <div class="container text-center text-md-left">
         <div class="row">
                 <hr class="clearfix w-100 d-md-none">
@@ -21,9 +19,15 @@ if (strcmp(getModeCookie(), 'LIGHT') == 0) {
                         <li>
                             <a href="#" onclick="return false;" onmousedown="autoScrollTo('head');"><?php echo Lib::Sanitize($lang['footer']['home']); ?></a>
                         </li>
+                        <?php
+                        if (!empty($games)) {
+                        ?>
                         <li>
                             <a href="#" onclick="return false;" onmousedown="autoScrollTo('games-bar');"><?php echo Lib::Sanitize($lang['footer']['game']); ?></a>
                         </li>
+                        <?php
+                        }
+                        ?>
                         <li>
                             <a href="#" data-toggle="modal" data-target=".contact-modal"><?php echo Lib::Sanitize($lang['footer']['contact']); ?></a>
                         </li>
@@ -34,20 +38,14 @@ if (strcmp(getModeCookie(), 'LIGHT') == 0) {
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><?php echo Lib::Sanitize($lang['footer']['info']); ?></h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#"><?php echo Lib::Sanitize($lang['footer']['mentions']); ?></a>
+                            <a href="#" data-toggle="modal" data-target=".legal-modal"><?php echo Lib::Sanitize($lang['footer']['mentions']); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php echo Lib::Sanitize($lang['footer']['data']); ?></a>
+                            <a href="#" data-toggle="modal" data-target=".privacy-modal"><?php echo Lib::Sanitize($lang['footer']['data']); ?></a>
                         </li>
                         <li>
-                            <a href="index.php?mode=<?php
-                            if (strcmp(getModeCookie(), 'DARK') == 0)
-                                echo "LIGHT";
-                            else if (strcmp(getModeCookie(), 'LIGHT') == 0)
-                                echo "DARK";
-                            else
-                                echo "LIGHT";
-                            ?>"><?php
+                            <a href="index.php?mode=<?php echo $mode;?>">
+                            <?php
                                 if (strcmp(getModeCookie(), 'DARK') == 0)
                                     echo Lib::Sanitize($lang['footer']['light']);
                                 else if (strcmp(getModeCookie(), 'LIGHT') == 0)
@@ -75,7 +73,7 @@ if (strcmp(getModeCookie(), 'LIGHT') == 0) {
                 </div>
             </div>
         </div>
-        <hr class="<?php echo $blk;?>">
+        <hr class="foot-hr">
         <div class="footer-copyright text-center">&copy; 2018 Copyright
             <a href="leaflighted.com"> Leaflighted.com</a>
         </div>

@@ -1,6 +1,6 @@
 <?php
 class SQL {
-    function createSecureDataConnection() {
+    static function createSecureDataConnection() {
         $dbh = NULL;
         try {
             $dbh = new PDO('mysql:host=localhost;dbname=leaflighted', 'root', '');

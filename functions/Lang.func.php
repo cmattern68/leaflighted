@@ -30,7 +30,7 @@ function changeLanguage()
 
 function setLanguageFr()
 {
-    $path = "/opt/lampp/htdocs/leaflighted/lang/fr-FR.json";
+    $path = "/wamp/www/leaflighted-front/lang/fr-FR.json";
     $file = fopen($path, "r") or die("Unable to open file!");
     $content = fread($file, filesize($path));
     fclose($file);
@@ -40,7 +40,7 @@ function setLanguageFr()
 
 function setLanguageEN()
 {
-    $path = "/opt/lampp/htdocs/leaflighted/lang/en-EN.json";
+    $path = "/wamp/www/leaflighted-front/lang/en-EN.json";
     $file = fopen($path, "r") or die("Unable to open file!");
     $content = fread($file, filesize($path));
     fclose($file);

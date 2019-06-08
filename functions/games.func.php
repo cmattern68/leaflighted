@@ -1,6 +1,6 @@
 <?php
 class Games {
-    function getGames() {
+    static function getGames() {
         $dbh = SQL::createSecureDataConnection();
         if (!$dbh)
             return NULL;

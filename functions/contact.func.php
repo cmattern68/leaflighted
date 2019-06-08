@@ -1,13 +1,13 @@
 <?php
 
-function prepareMessage($name, $firstname, $mail, $reason, $message)
+function prepareMessage()
 {
     $lang = changeLanguage();
-    $sanitizeName = Lib::Sanitize($name);
-    $sanitizeFirstName = Lib::Sanitize($firstname);
-    $sanitizeMail = Lib::Sanitize($mail);
-    $sanitizeReason = Lib::Sanitize($reason);
-    $sanitizeMessage = Lib::Sanitize($message);
+    $sanitizeName = Lib::Sanitize($_POST['name']);
+    $sanitizeFirstName = Lib::Sanitize($_POST['firstname']);
+    $sanitizeMail = Lib::Sanitize($_POST['email']);
+    $sanitizeReason = Lib::Sanitize($_POST['reason']);
+    $sanitizeMessage = Lib::Sanitize($_POST['message']);
     $errors = array();
 
     if (empty($sanitizeName))

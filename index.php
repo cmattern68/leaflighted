@@ -4,6 +4,9 @@
         setLangCookie($_GET['lang']);
     if (isset($_GET['mode']))
         setModeCookie($_GET['mode']);
+    $styleHref = Lib::setStyleHref();
+    $lang = changeLanguage();
+    $games = Games::getGames();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +17,8 @@
     <meta name="author" content="">
     <title>Leaflighted</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style/style.css" rel="stylesheet">
+    <!-- Custom StyleSheet -->
+    <link href="style/<?php echo $styleHref; ?>.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/logo.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -28,7 +32,10 @@
     <?php include("pages/header.php"); ?>
     <?php include("pages/games.php"); ?>
     <?php include("pages/staff.php"); ?>
+    <?php include("pages/cookie_alert.php"); ?>
     <?php include("pages/footer.php"); ?>
+    <!-- Cookie JavaScript -->
+    <script src="scripts/cookie.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

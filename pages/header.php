@@ -1,27 +1,13 @@
 <div class="header box">
     <!-- Navigation -->
     <div class="pos-f-t fixed-top">
-        <nav class="navbar <?php
-        if (strcmp(getModeCookie(), 'LIGHT') == 0)
-            echo 'navbar-light bg-light navbar-dev-light';
-        else if (strcmp(getModeCookie(), 'DARK') == 0)
-            echo 'navbar-dark bg-dark navbar-dev-dark';
-        else
-            echo 'navbar-light bg-light navbar-dev-light';
-        ?>">
-            <a class="navbar-brand logo-brand log-img" href="#">
+        <nav class="navbar navbar bg navbar-dev">
+            <a class="navbar-brand logo-brand log-img" href="https://leaflighted.com/">
                 <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo Leaflighted">
                 &nbsp;Leaflighted
             </a>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item <?php
-                if (strcmp(getModeCookie(), 'LIGHT') == 0)
-                    echo 'lang-light';
-                else if (strcmp(getModeCookie(), 'DARK') == 0)
-                    echo 'lang-dark';
-                else
-                    echo 'lang-light';
-                ?>">
+                <li class="nav-item lang">
                     <a class="nav-link" href="index.php?lang=EN">EN</a>
                     <a class="nav-link">&nbsp;&#183;&nbsp;</a>
                     <a class="nav-link" href="index.php?lang=FR">FR</a>

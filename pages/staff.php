@@ -1,5 +1,4 @@
 <?php
-$lang = changeLanguage();
 $blk = 'card-staff-light';
 if (strcmp(getModeCookie(), 'LIGHT') == 0)
     $blk = 'card-staff-light';
@@ -8,26 +7,12 @@ else if (strcmp(getModeCookie(), 'DARK') == 0)
 else
     $blk = 'card-staff-light';
 ?>
-<div class="<?php
-        if (strcmp(getModeCookie(), 'LIGHT') == 0)
-            echo 'staff-light';
-        else if (strcmp(getModeCookie(), 'DARK') == 0)
-            echo 'staff-dark';
-        else
-            echo 'staff-light';
-        ?> box">
+<div class="staff box">
     <div class="container">
         <h2 class="staff-name"><?php echo Lib::Sanitize($lang['staff']['direction-part']); ?></h2>
-        <div class="row <?php
-                if (strcmp(getModeCookie(), 'LIGHT') == 0)
-                    echo 'block-staff-light';
-                else if (strcmp(getModeCookie(), 'DARK') == 0)
-                    echo 'block-staff-dark';
-                else
-                    echo 'block-staff-light';
-                ?>">
+        <div class="row block-staff">
             <div class="col-sm">
-                <div class="card mb-3 staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3 staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -42,7 +27,7 @@ else
                 </div>
             </div>
             <div class="col-sm">
-                <div class="card mb-3  staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3  staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -61,7 +46,7 @@ else
         <h2 class="staff-name"><?php echo Lib::Sanitize($lang['staff']['sous-direct-part']); ?></h2>
         <div class="row">
             <div class="col-sm">
-                <div class="card mb-3 staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3 staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -77,7 +62,7 @@ else
             </div>
 
             <div class="col-sm">
-                <div class="card mb-3 staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3 staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -94,7 +79,7 @@ else
         </div>
         <div class="row block-staff">
             <div class="col-sm">
-                <div class="card mb-3  staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3  staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -110,7 +95,7 @@ else
             </div>
 
             <div class="col-sm">
-                <div class="card mb-3  staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3  staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -129,7 +114,7 @@ else
         <h2 class="staff-name"><?php echo Lib::Sanitize($lang['staff']['developper']); ?></h2>
         <div class="row">
             <div class="col-sm">
-                <div class="card mb-3  staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3  staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -145,7 +130,7 @@ else
             </div>
 
             <div class="col-sm">
-                <div class="card mb-3 staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3 staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -161,7 +146,7 @@ else
             </div>
 
             <div class="col-sm">
-                <div class="card mb-3 staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3 staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -178,7 +163,7 @@ else
         </div>
         <div class="row">
             <div class="col-sm">
-                <div class="card mb-3 staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3 staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -194,7 +179,7 @@ else
             </div>
 
             <div class="col-sm">
-                <div class="card mb-3  staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3  staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -210,7 +195,7 @@ else
             </div>
 
             <div class="col-sm">
-                <div class="card mb-3  staff-bg <?php echo $blk; ?>">
+                <div class="card mb-3  staff-bg card-staff">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="assets/staff/default.jpg" class="card-img" alt="...">
@@ -235,14 +220,7 @@ else
                 <button type="button" class="btn btn-primary btn-lg btn-block btn-info contact-btn" data-toggle="modal" data-target=".contact-modal"><?php echo Lib::Sanitize($lang['staff']['contact-us']); ?></button>
                 <div class="modal fade bd-example-modal-xl contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true" id="contact-modal-id">
                     <div class="modal-dialog modal-xl">
-                        <div class="modal-content <?php
-                                if (strcmp(getModeCookie(), 'LIGHT') == 0)
-                                    echo 'modal-light';
-                                else if (strcmp(getModeCookie(), 'DARK') == 0)
-                                    echo 'modal-dark';
-                                else
-                                    echo 'modal-light';
-                                ?>">
+                        <div class="modal-content modal-css-content">
                             <?php include("contact.php"); ?>
                         </div>
                     </div>

@@ -30,6 +30,7 @@
         "reason": "Raison",
         "partner": "Partenariat",
         "presse": "Presse",
+        "policy": "Données Personnelles",
         "autre": "Autre",
         "message": "Message",
         "close": "Fermer",
@@ -53,5 +54,21 @@
         "data": "Données Personnelles",
         "dark": "Passer en Mode Sombre",
         "light": "Passer en Mode Clair"
+    },
+    "legal": {
+        "rea": "Développement et réalisation editoriale",
+        "sircom": "Service Communication",
+        "host": "Hébergement",
+        "author": "Droit d’auteur",
+        "text": "Ce site web est protégé par des droits de propriété intellectuelle et est la propriété exclusive de Leaflighted. Tout matériel qu'il contient, y compris, mais sans s'y limiter, les textes, données, graphiques, images, sons, vidéos, logos, icônes est protégé par la propriété intellectuelle et restent la propriété de Leaflighted. Toute utilisation ou modification du contenu du site Web de Leaflighted sans autorisation écrite au préalable la direction est interdite. Leaflighted se réserve le droit de modifier le contenu de ce site à tout moment et sans préavis."
+    },
+    "privacy": {
+        "text-fline": "Aucune information personnelle n'est collectée, utilisée ou cédée à des tiers à votre insu.",
+        "text-sline": "Pour toutes question, n'hésitez pas à nous contacter."
+    },
+    "cookie": {
+        "like": "Vous aimez les cookies ?",
+        "usage": "Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site.",
+        "accept": "J'accepte"
     }
 }

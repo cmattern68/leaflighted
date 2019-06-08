@@ -30,6 +30,7 @@
         "reason": "Reason",
         "partner": "Partnership",
         "presse": "Press",
+        "policy": "Privacy Policy",
         "autre": "Other",
         "message": "Message",
         "close": "Close",
@@ -53,5 +54,21 @@
         "data": "Privacy Policy",
         "dark": "Switch to Dark Mode",
         "light": "Switch to Light Mode"
+    },
+    "legal": {
+        "rea": "Development and editorial realization",
+        "sircom": "Communication Department",
+        "host": "Hosting",
+        "author": "Copyright",
+        "text": "This website is protected by intellectual property rights and is the exclusive property of Leaflighted. All material contained, including, but not limited to, text, data, graphics, images, sounds, videos, logos, icons is protected by intellectual property and remains the property of Leaflighted. Any use or modification of the content of the Leaflighted website without the prior written permission of the direction department is prohibited. Leaflighted reserves the right to modify the content of this site at any time without notice."
+    },
+    "privacy": {
+        "text-fline": "No personal information is collected, used or transferred to third parties without your knowledge.",
+        "text-sline": "For any question, do not hesitate to contact us."
+    },
+    "cookie": {
+        "like": "Do you like cookies ?",
+        "usage": "We use cookies to ensure you get the best experience on our website.",
+        "accept": "I agree"
     }
 }

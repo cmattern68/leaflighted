@@ -1,18 +1,7 @@
 <?php
-$lang = changeLanguage();
-$blk = 'card-staff-light';
-$games = Games::getGames();
-
-if (strcmp(getModeCookie(), 'LIGHT') == 0)
-    $blk = 'card-staff-light';
-else if (strcmp(getModeCookie(), 'DARK') == 0)
-    $blk = 'card-staff-dark';
-else
-    $blk = 'card-staff-light';
-
 if (!empty($games)) {
 ?>
-<div id="games-bar" class="games box">
+<div class="games box" id="games-bar">
     <div class="container">
         <h1><?php echo sizeof($games) <= 1 ? Lib::Sanitize($lang['games']['onlygames']) : Lib::Sanitize($lang['games']['games']); ?></h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -31,7 +20,7 @@ if (!empty($games)) {
                 foreach ($games as $game) {
                 ?>
                 <div class="carousel-item <?php echo $i == 0 ? "active" : "nothing"; ?> gamesslide">
-                    <a href="<?php echo Lib::Sanitize($game['href']); ?>"><img class="d-block" src="<?php echo Lib::Sanitize($game['path']); ?>" alt"<?php echo Lib::Sanitize($game['name']); ?>" height="250px"></a>
+                    <a href="<?php echo Lib::Sanitize($game['href']); ?>" target="_blank"><img class="d-block" src="<?php echo Lib::Sanitize($game['path']); ?>" alt"<?php echo Lib::Sanitize($game['name']); ?>" height="250px"></a>
                 </div>
                 <?php
                 ++$i;
